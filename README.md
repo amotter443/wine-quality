@@ -10,7 +10,13 @@ This project was conducted as part of my intensive ML course in the spring of 20
 
 Pre-Requisite Understanding 
 ------
-Do research to better understand models before attempting. Code is simple and easy to read/duplicate, understanding is more valuable
+Do research to better understand models before attempting. Code is simple and easy to read/duplicate, understanding is more valuable.
+- [SVM](https://www.analyticsvidhya.com/blog/2017/09/understaing-support-vector-machine-example-code/)
+- [K-means Clustering](https://uc-r.github.io/kmeans_clustering)
+- [Hierarchical Clustering](https://www.statisticshowto.com/hierarchical-clustering/)
+- [Random Forest](https://towardsdatascience.com/an-implementation-and-explanation-of-the-random-forest-in-python-77bf308a9b76)
+- [Basic Neural Networks](https://machinelearningmastery.com/neural-networks-crash-course/)
+
 
 
 Data Dictionary
