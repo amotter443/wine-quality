@@ -20,18 +20,18 @@ The code for this project is rather simple to read and duplicate. More important
 
 Data Dictionary
 -------
-The wine data source contains 6497 observations of 14 variables. The features contain information about different attributes that are important to the winemaking process. 
+The wine data source contains 6497 observations of 14 variables. The features contain information about different attributes that are important to the winemaking process. Thanks to `jadianes` whose wine data dictionary helped develop mine:
 - `id` -- id values for the individual wines (removed upon reading in)
-- `fixed acidity` -- most acids involved with wine or fixed or nonvolatile (do not evaporate readily)
+- `fixed acidity` -- most acids involved with wine are nonvolatile or fixed (do not evaporate readily)
 - `volatile acidity` -- the amount of acetic acid in wine, which at too high of levels can lead to an unpleasant, vinegar taste
-- `citric acid` -- the amount of acetic acid in wine, which at too high of levels can lead to an unpleasant, vinegar taste
-- `residual sugar` -- the amount of sugar remaining after fermentation stops, it's rare to find wines with less than 1 gram/liter and wines with greater than 45 grams/liter are considered sweet
+- `citric acid` -- one of the primary fixed acids in wine, lends freshness to the wine
+- `residual sugar` -- the amount of sugar remaining after fermentation stops (rare to find wines with less than 1 gram/liter, and wines with greater than 45 grams/liter are considered sweet)
 - `chlorides` -- the amount of salt in the wine
-- `free sulfur dioxide` -- the free form of SO2 exists in equilibrium between molecular SO2 (as a dissolved gas) and bisulfite ion; it prevents microbial growth and the oxidation of wine
-- `total sulfur dioxide` -- amount of free and bound forms of S02; in low concentrations, SO2 is mostly undetectable in wine, but at free SO2 concentrations over 50 ppm, SO2 becomes evident in the nose and taste of wine
-- `density` -- the density of water is close to that of water depending on the percent alcohol and sugar content
+- `free sulfur dioxide` -- prevents microbial growth and the oxidation of wine
+- `total sulfur dioxide` -- mostly undetectable in wine, but at free SO2 concentrations over 50 ppm, SO2 becomes evident in the nose and taste of wine
+- `density` -- the density of wine is close to that of water depending on the percent alcohol and sugar content
 - `pH` -- describes how acidic or basic a wine is on a scale from 0 (very acidic) to 14 (very basic); most wines are between 3-4 on the pH scale
-- `sulphates` -- a wine additive which can contribute to sulfur dioxide gas (S02) levels, wich acts as an antimicrobial and antioxidant
+- `sulphates` -- a wine additive which can contribute to sulfur dioxide levels, acts as an antimicrobial and antioxidant
 - `alcohol` -- the percent alcohol content of the wine
 - `quality` -- score between 0 and 10
 - `type` -- 0 red wine 1 white wine
@@ -47,7 +47,7 @@ Usage
 
 Simplifying The Project
 -------
-- Individuals without a familiarity with the statistical framework behind the models can potentially find the learning time in exploring each becomes disproportionate to the actual modeling
+- Individuals without previous experience with the models' statistical frameworks can potentially find this project's learning time disproportionate to the actual modeling
 - If you are approaching this project outside of a structured education background, certain aspects of my code can be omitted or reduced to focus attention on conceptual understanding 
-- For `wine_tree.R`, for example, every possible mtry is tested and compared to determine the optimal number of features for the tree-based model. It will save computing and comprehension time to simply move forward using the pre-determined mtry in the script rather than repeating this process yourself
+- In `wine_tree.R`, for example, every possible mtry is tested and compared to determine the optimal number of features for the tree-based model. It will save computing and comprehension time to simply move forward using the pre-determined mtry in the script rather than repeating this process yourself
 - Likewise with `wine_cluster.R`, as an unsupervised project there are innumerable ways to express the information, and no way is the exact best one. Start with understanding the basic describeBy() outputs as well as how the final clustering configuration was chosen before moving on to my custom mean comparison/difference calculation methods
